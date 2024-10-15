@@ -12,17 +12,23 @@ export default function page() {
                             {/* Show password / Forgot password */}
                             <div className="flex justify-between">
                                 <div className="flex gap-2">
-                                <input id="show-password" type="checkbox" />
-                                <label htmlFor="show-password" className="text-xs">Show password</label>
+                                    <input id="show-password" type="checkbox" />
+                                    <label htmlFor="show-password" className="text-xs">Show password</label>
                                 </div>
 
                                 <a href="#" className="text-xs text-blue-800">Forgot password?</a>
                             </div>
 
                             {/* Botón de enviar */}
-                            <button type="submit" className="uppercase bg-[#4c33ff] rounded-lg w-full h-12">
-                                Login
-                            </button>
+                            <div className="flex flex-col">
+                                <button type="submit" className="uppercase bg-[#4c33ff] rounded-lg w-full h-12 text-white">
+                                    Login
+                                </button>
+                                <div className="flex justify-center">
+                                    <p className="text-xs">Don't have an account? &nbsp;</p>
+                                    <a href="#" className="text-xs mt-0 text-blue-800">Sign up</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
